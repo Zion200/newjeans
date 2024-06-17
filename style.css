@@ -1,0 +1,238 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+*{margin: 0; padding: 0;}
+body{overflow-x: hidden; overflow-y: scroll;}
+body{font-family: 'Noto Sans KR'; font-size: 1em; color: #444;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+img{vertical-align: bottom;}
+
+
+
+
+/*nav/ nav logo*/
+nav{width: 100%; height: 100px; background: #0062ff; }
+nav h1 {float: left;}
+nav h1 img{margin: 2px 0  0 12px; box-sizing: border-box;}
+
+/*nav menu*/
+nav .menu{float: right; margin: 45px 12px 0 0; position: relative;}
+nav .menu > li{float: left; }
+nav .menu > li > a{
+    display: block; color: white; font-family: 'Tiny5'; font-size: 23px; text-align: center; line-height: 47px;
+      width: 250px; height: 55px;  transition: all 0.2s; box-sizing: border-box;  border-bottom: 10px solid white;
+      border-radius: 15px 15px 0 0;
+}
+nav .menu > li:hover > a{background: blue; width: 250px; font-size: 24px;  }
+/*nav submenu*/
+nav .menu > li > .submenu{position: absolute; display: none; z-index: 20;}
+nav .menu > li > .submenu > li > a{
+    width: 250px; height: 35px; line-height: 35px; display: block; text-align: center; background: #0062ff; color: white;
+    font-size: 18px; font-family: 'Noto Sans KR'; font-weight: 200; transition: all 0.1s;
+ }
+ nav .menu > li > .submenu > li:hover > a{background: black; font-weight: 500;}
+
+
+/*nav 토끼로고*/
+nav .Rlogo > li > a > img{}
+nav .Rlogo{float: left; margin: 25px 0 0 25px;}
+nav .Rlogo > li {float: left; margin-left: 10px;}
+nav .Rlogo > li > a {display: block;}
+
+/*header*/
+header{width: 100%; height: 700px; background: #0062ff;  position: relative; box-sizing: border-box;}
+header .inner{width: 1656px; height: 700px; position: absolute; margin: 0 12px auto;
+                background: white; box-sizing: border-box;}
+
+/*header이너 - 글자 상하좌우 4개 */                
+header .inner .tl{position: absolute; top: 25px; left: 20px; font-family: 'Noto Sans KR'; color: #888; font-size: 0.8em;}
+header .inner .tr{position: absolute; top: 25px; right: 20px; font-family: 'Noto Sans KR';  color: #888;font-size: 0.8em;}
+header .inner .bl{position: absolute; bottom: 15px; left: 20px; font-family: 'Noto Sans KR';  color: #0062ff;}
+header .inner .bl span{font-weight: 800;}
+header .inner .bl .dont{font-weight: 200;}
+header .inner .br{position: absolute; bottom: 15px; right: 20px; font-family: 'Noto Sans KR'; color: #888;}
+
+/*header이너 앨범 cd 박스 안에 요소들*/
+header .inner .inner1{width: 1300px; height: 500px; position: absolute; top: 120px; left: 150px;
+                      box-sizing: border-box;}
+header .inner .inner1 .box1{width: 540px; height: 100%;  float: left;  }
+
+/*노래제목 나오는 칸 header box2*/
+header .inner .inner1 .box2{width: 260px; height: 100%;  float: left; /*background: #888;*/}
+
+/*타이틀곡과 수록곡*/
+header .inner .inner1 .box2 .musictitle1{position: absolute; top: 80px; display: none;}
+header .inner .inner1 .box2 .musictitle1 > li > a{
+  text-align: center; display: block; font-size: 3em; font-family: 'Tiny5'; color: #0062ff; margin-left: -70px;
+}
+
+header .inner .inner1 .box2 .musictitle1 > li > .musicname {margin-top: 30px; margin-left: 17px;}
+
+header .inner .inner1 .box2 .musictitle1 > li > .musicname > li > a{
+  text-align: left; display: block; width: 200px; height: 40px; line-height: 40px; font-size: 1.3em; margin-bottom: 11px;
+  color: #777; transition: all 0.2s; font-weight: 200; box-sizing: border-box; 
+}
+header .inner .inner1 .box2 .musictitle1 > li > .musicname > .x{position: absolute; bottom: -40px; right: -10px;}
+
+
+header .inner .inner1 .box2 .musictitle1 > li > .musicname > .x img{width: 50%; transition: all 0.1s;}
+
+header .inner .inner1 .box2 .musictitle1 > li > .musicname > .x:hover img{transform: scale(1.1);}
+header .inner .inner1 .box2 .musictitle1 > li > .musicname > li:hover > a{
+  transform: translateX(35px);  font-weight: 800; color: black;
+}
+
+/*수록곡 타이틀 글자 색깔*/
+header .inner .inner1 .box2 .musictitle1:nth-child(1) > li > a{color: #0062ff;}
+header .inner .inner1 .box2 .musictitle1:nth-child(2) > li > a{color: #e14343;}
+header .inner .inner1 .box2 .musictitle1:nth-child(3) > li > a{color: #222222;}
+header .inner .inner1 .box2 .musictitle1:nth-child(4) > li > a{color: #45a5df;}
+header .inner .inner1 .box2 .musictitle1:nth-child(5) > li > a{color: #55bfe2;}
+header .inner .inner1 .box2 .musictitle1:nth-child(6) > li > a{color: #0b4e0c;}
+header .inner .inner1 .box2 .musictitle1:nth-child(7) > li > a{color: #cc4d1e;}
+header .inner .inner1 .box2 .musictitle1:nth-child(8) > li > a{color: #ff9d00;}
+
+
+
+
+/*앨범모음 9개*/
+header .inner .inner1 .box3{width: 500px; height: 100%;  float: right; }
+
+header .inner .inner1 .box3 .album9 > li{width: 150px; height: 150px; float: left;  position: relative;}
+header .inner .inner1 .box3 .album9{margin: 25px 0 25px 50px; }
+
+header .inner .inner1 .box3 .album9 > li > a > img{width: 130%; overflow: hidden; position: absolute; top: -20px; 
+                                                   left: -22px; transition: all 0.2s; opacity: 0.6;}
+header .inner .inner1 .box3 .album9 > li:hover > a > img{transform: scale(1.2); opacity: 1;}
+header .inner .inner1 .box3 .album9 > li:hover > a:active > img{transform: scale(1.1);}
+header .inner .inner1 .box3  h2{position: absolute; bottom: 70px; right: 29px;}
+header .inner .inner1 .box3 h2 img{width: 90px; transform: rotate(-40deg);}
+header .inner .inner1 .box3 p{position: absolute; bottom: 45px; right: 13px; font-family: 'Tiny5'; color: #0062ff;
+                                font-size: 1.3em; animation: box3p 2s infinite;}
+@keyframes box3p{
+  10%{bottom:45px;}
+  50%{bottom:45px;}
+   60%{bottom:43px;}
+   70%{bottom:47px;}
+   80%{bottom:45px;}
+   90%{bottom:45px;}
+   100%{bottom:45px;}
+}
+
+
+/*앨범박스 cd*/
+header .inner .inner1 .box1 a img {position: absolute; top: -50px; left: -90px; z-index: 8; transition: all 0.1s;}
+header .inner .inner1 .box1 a{display: none;}
+header .inner .inner1 .box1 a:first-child{display: block;}
+header .inner .inner1 .box1 .cd1{position: absolute; top: 55px; left: 203px; width: 30%; overflow: hidden;}
+header .inner .inner1 .box1 .arrow1{position: absolute; bottom: 45px; right: 850px;  width: 5%; transform: rotate(180deg);}
+header .inner .inner1 .box1 p{position: absolute; bottom: 65px; right: 824px; color: #0062ff; animation: box1p 2s infinite;}
+@keyframes box1p{
+  10%{bottom:65;}
+  50%{bottom:65;}
+   60%{bottom:63px;}
+   70%{bottom:68px;}
+   80%{bottom:65px;}
+   90%{bottom:65px;}
+   100%{bottom:65px;}
+}
+
+
+/*header .inner .inner1 .box1 .cd1:hover{transform: translateX(40px);}*/
+
+
+header .inner .inner1 .box1 a:hover img{transform: scale(1.05);}
+header .inner .inner1 .box1 a:active img{transform: scale(1);}
+
+
+/*노래 제목 박스 */
+header .inner .inner1 .box2{z-index: 20;}
+
+
+
+
+
+/*main*/
+main .sec1{width: 100%; height: 950px; background: #0062ff; position: relative;}
+main .sec1 .mainbox{width: 1200px; height: 300px; position: absolute; top: 150px; left: 245px; }
+main .sec1 .mainbox .Micon > li > a{
+  width: 100px; height: 100px;  display: block;
+}
+
+
+main .sec1 .mainbox .Micon > li{float: left; cursor: pointer;}
+main .sec1 .mainbox .Micon > li > a img{transition: all 0.2s;}
+main .sec1 .mainbox .Micon > li > a:active img{transform: scale(0.7);}
+
+/*sec1 h1*/
+main .sec1 h1{text-align: center; padding-top: 55px; box-sizing: border-box; color: white; font-size: 3em; 
+              font-family: 'Tiny5';} 
+
+main .sec1 .txtbox{width: 560px; height: 169px; position: absolute; top: 355px; left: 0px; transition: all 0.3s; 
+                     border-radius: 15px; cursor: pointer;}
+main .sec1 .txtbox h2{color: #b6d2ff; padding-left: 20px; box-sizing: border-box; padding-top: 10px;}
+main .sec1 .txtbox p{box-sizing: border-box; padding-top: 18px; line-height: 28px; letter-spacing: 0.7px; color: #76aaff;
+                      padding-left: 20px;}
+
+main .sec1 .txtbox:hover{background: rgba(255, 255, 255,0.8); transform: scale(1.05); z-index: 50;}
+
+main .sec1 .txtbox:hover h2{color: #5898ff;}
+
+main .sec1 .txtbox:hover p{letter-spacing: 0.4px;}
+main .sec1 .txtbox p span{font-weight: 700;}
+/*imgbox*/
+main .sec1 .imgbox{
+  width: 600px; height: 300px; position: absolute; top: 355px; right: 0px;  background: white; overflow:  hidden;
+   box-sizing: border-box; transition: all 0.3s;
+}
+main .sec1 .imgbox .simgbox{width: 590px; height: 290px; background: black; margin:5px auto;}
+main .sec1 .imgbox .simgbox a img{box-sizing: border-box; width: 590px; height: 290px; }
+main .sec1 .imgbox .simgbox a{display: none;}
+main .sec1 .imgbox .simgbox a:last-child{display: block;}
+main .sec1 .imgbox .simgbox a:hover img{transform: scale(1.1);}
+main .sec1 .imgbox:hover{transform: scale(1.1);}
+
+.howsweetimg{width: 350px; height: 500px; background: rgba(255, 255, 255, 0.8); position: fixed; box-sizing: border-box; 
+            top: 160px; right: 50px; z-index: 30; border-radius: 20px; box-shadow: 0 1px 7px 1px #22222276 ; 
+            display: none;  animation: xximg 15s infinite; transition: all 0.2;}
+.howsweetimg a img{width: 300px; height: 300px; box-shadow: 0 1px 7px 1px #222222c2 ; box-sizing: border-box;
+                  }
+.howsweetimg a{display: block; text-align: center; box-sizing: border-box; margin-top: 90px; box-sizing: border-box;}
+.howsweetimg audio{margin-left: 25px; display: block; margin-top: 20px; box-sizing: border-box;}
+.howsweetimg .xx:hover{
+  transform: scale(1.2);
+}
+.howsweetimg .xx:active{
+  transform: scale(1.05);
+}
+.howsweetimg .xx{ width: 50px; height: 50px; box-sizing: border-box; position: absolute; right: 20px; top: 20px;
+                transition: all 0.2s;}
+.howsweetimg h2{font-family: 'Tiny5'; color: #0062ff; font-size: 2.3em; position: absolute; top: 25px; left: 30px;} 
+@keyframes xximg{
+  50%{background: rgba(113, 163, 255, 0.8);}
+  100%{background: white;}
+}
+
+.members{width: 350px; height: 700px; background: rgba(255, 255, 255, 0.8); z-index: 31; display: none;
+          box-shadow: 0 1px 7px 1px #22222276 ; position: fixed; top: 100px; left: 50px;  } 
+          .members .memimg:hover a img{transform: translateY(40px);}
+.memimg{width: 350px; height: 700px; position: absolute; top: 0; left: 0; }
+.members .memimg p{position: absolute; top: 20px; left: 20px; font-size: 3.8em; color: #0062ff; font-family: 'Tiny5';
+                  z-index: 40;}
+.members .memimg a{overflow: hidden;}
+.members .memimg a img{transition: all 0.5s;}
+.members .memimg a .mx{position: absolute; width: 50px; height: 50px; top: 30px; right: 20px; z-index: 40;}
+.members .memimg:hover a .mx{transform: none;}
+
+
+/* 
+(100*100) - 12개씩 3줄 총 36개 정사각형 뉴진스 관련된 아이콘 픽셀 -> 누르면 실물사진(투명배경)으로 변함 
+항목 -> 멤버들 각 각 7개씩 / 나머지 한개 NJ - 하트
+    해린 - 고양이, 선인장, 고구마, 큰 고양이 눈, 개구리,물고기 , 초록 토끼
+    민지 - 강아지, 곰, 토끼 파랑 , 콧대?.. , 아이스크림 , 토마토 , 04( 빵)
+    다니엘 - 당근 , 코알라 ,인어공주 , 호박, 우유, 햇빛, 토끼 노랑
+    하니 -  04 (빵) , 캥거루 , 구름 , 웃는 이모티콘?? ,송아지 ,토끼 핑크 , 수달
+    혜인 - 입술, 다람쥐, 해리포터(마법사모자),빙수,딸기, 보라토끼, 연보라 물감
+*/
